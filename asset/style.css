@@ -293,6 +293,24 @@ footer {
     flex-direction: column;
     align-items: flex-end;
 } */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+}
+
+.left-content {
+    box-sizing: border-box;
+    margin-top: 2.4rem;
+}
+
+.right-content {
+    box-sizing: border-box;
+}
+
+
 .contact {
     height: 2.5rem;
     border-radius: 5px;
@@ -306,7 +324,7 @@ footer {
     color: #4B4B4B;
 }
 
-.contact1 {
+.contact-textarea {
     border-radius: 5px;
     border: 1px solid #8a8a8aad;
     width: inherit;
@@ -331,27 +349,38 @@ footer {
     width: 100%;
 }
 
-.center {
-    width: 70%;
-}
-
 .main {
     /* background-color: white; */
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
     padding: 4rem;
     border-radius: 3rem;
 }
 
 .contact-img img {
+    width: 100%;
     -webkit-filter: drop-shadow(7px 6px 0px #2222225d);
     filter: drop-shadow(7px 6px 0px #2222225d);
-    /* -webkit-box-shadow: 10px 6px 0px 0px rgba(0, 0, 0, 0.25); */
-    /* box-shadow: 10px 6px 0px 0px rgba(0, 0, 0, 0.25); */
+
+}
+
+.submit {
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #0B48A8;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #0B48A8;
+    color: #FBF7EE;
+    box-shadow: 0px 4px 0px 0px #041c40;
 }
 
 .img-right {
     width: 100%;
     /* max-width: 500px; */
+}
+
+.ads {
+    height: 80%;
 }
 
 @media screen and (max-width: 1129px) {
@@ -384,7 +413,7 @@ footer {
 
     .card {
         box-sizing: border-box;
-        padding: 2%;
+        /* padding: 2%; */
         border: 1px solid rgb(228, 228, 228);
         border-radius: 4px;
         background-color: #FFFFFF;
@@ -401,6 +430,19 @@ footer {
     .cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
 
+    }
+
+    .ads {
+        height: auto;
+    }
+
+    .content {
+
+        grid-template-columns: 1fr;
+    }
+
+    .contact-img {
+        display: none;
     }
 
 }
@@ -432,6 +474,19 @@ footer {
         grid-template-columns: repeat(1, minmax(0, 1fr));
 
     }
+
+    .ads {
+        height: auto;
+    }
+
+    .content {
+
+        grid-template-columns: 1fr;
+    }
+
+    .contact-img {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -452,6 +507,17 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .ads {
+        height: auto;
+    }
 
+    .content {
+
+        grid-template-columns: 1fr;
+    }
+
+    .contact-img {
+        display: none;
+    }
 
 }
