@@ -156,15 +156,15 @@ li {
     border: 1px solid rgb(228, 228, 228);
     border-radius: 4px;
     background-color: #FFFFFF;
-    transition: 0.3s;
+    transition: 0.3s ease;
 
 }
 
 .fiche:hover {
-    transition: 0.3s;
-    transform: scale(1.2);
-    box-shadow: 0px 7px 19px 1px #767676;
-    background-color: rgb(247, 247, 247);
+    transition: 0.3s ease;
+    transform: scale(1.11);
+    box-shadow: 0px 0px 10px 0px #0000004d;
+    background-color: rgb(255, 255, 255);
 }
 
 .fiche img {
